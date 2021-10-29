@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="update">
+    {% csrf_token %}
+    <label for="id">Enter ID of vacancy to update</label><br>
+    <input name="id"><br>
+    <br>
+    <label for="newDescription">Enter updated vacancy</label><br>
+    <input name="newDescription"><br>
+    <br>
+    <button type="submit"> update </button>
+
+</form>
+</body>
+</html>

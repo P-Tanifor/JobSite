@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="delete">
+    {% csrf_token %}
+    <label for="id">Enter id of vacancy to be removed</label><br>
+    <input name="id"><br>
+    <br>
+    <button type="submit"> remove </button>
+
+</form>
+</body>
+</html>
